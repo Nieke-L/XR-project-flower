@@ -1,25 +1,25 @@
 <!doctype html>
 <html lang="en">
 <head>
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <title>3D Model Viewer</title>
- <script type="module" src="https://unpkg.com/@google/model-viewer/dist/modelviewer.min.js"></script>
- <style>
- html, body { margin: 0; height: 100%; }
- model-viewer { width: 100%; height: 100%; }
- </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3D Model Viewer</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer@4.0.0/dist/model-viewer.min.js"></script>
+  <style>
+    html, body { margin: 0; height: 100%; }
+    model-viewer { width: 100%; height: 100%; }
+  </style>
 </head>
 <body>
- <model-viewer
- src="flower-in-pot-1.glb"
- alt="A 3D model of a flower in a pot"
- ar
- ar-modes="webxr scene-viewer quick-look"
- camera-controls
- auto-rotate
- autoplay
- >
- </model-viewer>
+  <model-viewer
+    src="flower-in-pot-1.glb"
+    alt="A 3D model of a flower in a pot"
+    environment-image="neutral"
+    shadow-intensity="1"
+    camera-controls
+    auto-rotate
+    ar
+    ar-modes="webxr scene-viewer quick-look">
+  </model-viewer>
 </body>
 </html>
